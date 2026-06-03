@@ -1,0 +1,10 @@
+appId: com.elea.app
+steps:
+- launchApp:
+    clearState: true
+- tapOn: Username
+- inputText: doctor_1
+- tapOn: Password
+- inputText: securepass!
+- tapOn: Login
+- assertVisible: Dashboard
