@@ -9,6 +9,23 @@ An automated, zero-touch continuous integration (CI) safety net engineered to el
 
 ---
 
+elea-e2e-pipeline/
+│
+├── .github/workflows/
+│   └── e2e-gateway.yml         # Cloud-native automation instructions (GitHub Actions)
+├── .git/hooks/
+│   └── pre-push                # Event-driven Git hook for automated documentation
+├── scripts/
+│   ├── parse_criteria.py       # Requirements processing engine (Regex/Parser)
+│   ├── orchestrate_tests.sh    # State tracking pipeline and testing loop
+│   └── generate_dashboard.py   # Telemetry visualizer (Outputs HTML Reporting)
+├── tests/
+│   ├── bug_reports/            # Input folder for text bug reports and logs
+│   ├── generated_flows/        # Machine-compiled Maestro YAML test scenarios
+│   └── dashboard.html          # Interactive visual reporting layer
+├── Dockerfile                  # Container isolation environment blueprint
+└── requirements.txt            # Operational dependencies
+
 ## 📌 Core Architecture & Data Flow
 
 The architecture behaves like an automated factory assembly line, transforming raw product documentation into production-safeguarded features:
@@ -31,3 +48,4 @@ The architecture behaves like an automated factory assembly line, transforming r
                   │
                   ▼
 [ Automated User-Facing Release Notes (.md) ] + [ Telemetry HTML Dashboard ]
+
