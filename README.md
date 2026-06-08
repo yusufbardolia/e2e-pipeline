@@ -11,6 +11,7 @@ An automated, zero-touch continuous integration (CI) safety net engineered to el
 
 ## 📂 Project Structure
 
+```text
 elea-e2e-pipeline/
 │
 ├── .github/workflows/
